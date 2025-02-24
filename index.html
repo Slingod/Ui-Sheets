@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenue dans mon Kit UI</h1>
+        <nav class="navbar">
+            <div class="navbar-brand">Mon Site</div>
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a href="#">Accueil</a></li>
+                <li class="navbar-item"><a href="#">À propos</a></li>
+                <li class="navbar-item"><a href="#">Services</a></li>
+                <li class="navbar-item"><a href="#">Contact</a></li>
+            </ul>
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        
+        <!-- Couleurs -->
+        <section>
+            <h2>Couleurs</h2>
+            <div class="color-box primary-color">Couleur Primaire</div>
+            <div class="color-box secondary-color">Couleur Secondaire</div>
+            <div class="color-box dark-color">Couleur Sombre</div>
+            <div class="color-box light-color">Couleur Claire</div>
+        </section>
+
+        <!-- Typographie -->
+        <section>
+            <h2>Typographie</h2>
+            <h1>Titre H1</h1>
+            <h2>Titre H2</h2>
+            <p>Paragraphe avec la police de texte.</p>
+        </section>
+
+        <!-- Boutons -->
+        <section>
+            <h2>Boutons</h2>
+            <button class="btn btn-primary">Bouton Primaire</button>
+            <button class="btn btn-secondary">Bouton Secondaire</button>
+        </section>
+
+        <!-- Formulaires -->
+        <section>
+            <h2>Formulaires</h2>
+            <form>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email">
+
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </section>
+
+        <!-- Cartes -->
+        <section>
+            <h2>Cartes</h2>
+            <!-- Modal Structure -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Contenu de la modal.</p>
+    </div>
+</div>
+
+            <div class="card">
+                <button class="btn btn-primary">
+                    <i class="fas fa-check"></i> Bouton avec Icône
+                </button>
+                <div class="alert alert-success">
+                    <strong>Succès!</strong> Votre action a été complétée.
+                </div>
+                
+                <div class="alert alert-warning">
+                    <strong>Attention!</strong> Veuillez vérifier les informations.
+                </div>
+                
+                <h3>Titre de la Carte</h3>
+                <p>Contenu de la carte. Ceci est un exemple de texte.</p>
+                <button class="btn btn-primary">Action</button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
